@@ -78,3 +78,16 @@ este caso no usare TypeScript
 -selecciono yes 
 - selecciono npm
 se descarga y me aparece un archivo llamado .eslintrc.json
+* despues de crear algunos componentes y carpetas que voy a usar, voy
+a probar los scripts empiezo con * npm run lint lo normal es que me de 
+muchos errores a la primera , es normal por la serie de reglas que 
+he colocar en el eslint * con este  codigo arreglo todo lo que esta 
+petando ya que e intentalo un scripts que me permite hacer, lo que tendria
+que colocar en la terminal es npm run lint:fix
+* ahora voy a probar el scripts de la documentacion * npm run docs:build se
+crea archivo en la carpeta docs , de tener cosas comentadas asi ;
+
+/**
+ * 
+ * @returns Componente principal de nuestra aplicacion
+ */
