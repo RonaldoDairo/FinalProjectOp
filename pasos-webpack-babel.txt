@@ -91,3 +91,6 @@ crea archivo en la carpeta docs , de tener cosas comentadas asi ;
  * 
  * @returns Componente principal de nuestra aplicacion
  */
+
+-*ahora pruebo el scripts build que seria npm run build , una vez provado sigo con .
+-*
