@@ -1,0 +1,80 @@
+Serie de pasos a realizar , para webpack , babel
+Creacion de proyecto final sin necesidad de usar create-react-app
+dentro del proyecto que voy a empezar :
+empezaremos con herramientas de desarrollo:
+npm init -y <<< para responder todo que si 
+npm init voy a tener que ir respondiendo uno por 
+el primer paso que aperece es si quiero cambiar el nombre del proyect
+version : si quiero cambiarlo solo coloco la que quiero y listo
+descripcion: aqui alguna referencia para saber que projecto es
+entry point : (index.js) tambien se podria cambiar
+test command : el encargado de hacer prueba "lo dejamos en blanco de comento"
+git respository : el reposito de git , lo dejo en blanco de momento
+keywords: palabra reservada para luego encontrarlo con npm , le coloco react
+author: coloco aqui mi usuario de git (RonaldoDairo)
+license: tenemos muchas otras licencia por defecto tiene para seleccionar
+(ISC) que seria la licencia estandarizada que esta bien y dejo esta , al
+presionar enter sacaria un resumen de lo que he insertado , va crear un 
+package.json, le damos a yes o okey , o enter y se genera un package.json
+Ahora voy a instalar lo que voy a necesita para el project:
+* npm i --save @babel/cli nos permitira crear nuesta build del project con
+archivos jsx
+* npm i --save @babel/core
+* npm i --save @babel/preset-env @babel/preset-react permite trabajar con jsx o project 
+react 
+* si en algun momento instalo  mal x o y elimino la carpeta
+nodel-models elimino package-lock-json y elimino llas dependencias dentro
+de package.json y las vuelvo a generarlo e instalar con:
+* npm i --save-dev @babel/cli @babel/core @babel/preset-env 
+@babel/preset-react y asi instalo las 4 instalaciones de babel
+dentro de las dev-dependencies del package.json
+*npm i --save-dev babel-loader 
+* npm i --save-dev css-loader
+*npm i --save-dev documentation  para documentar nuestros componentes
+* npm i --save-dev eslint permite crear un archivo de configuracion 
+para una serie de reglas para que nos permita desarrollar bajo unos 
+standares marcador a la hora de trabajar 
+* npm i --save-dev eslint-loader para poder trabajar con el,
+en la compilacion de nuestro proyecto 
+*npm i --save-dev webpack webpack-cli webpack-dev-server
+  para empaquetar todo webpack-cli , webpack-dev-server nos va
+a servir para hacer una publicacion en localhost en un puesto concreto
+* npm i --save-dev node-sass sass-loader para cargar la build y para 
+archivos scs , tiene que ver con las hojas de estilos 
+* npm i --save-dev html-webpack-plugin para usar plantilla de html y
+utilizar nuestro proyecto y empaquetar nuestro proyecto utilizando
+esa plantilla
+* npm i --save-dev mini-css-extract-plugin para minificar para que ocupe
+lo minimo posible , son pluging para minificado para webpack
+* npm i --save-dev file-loader source-map-loader      para depuracion 
+AHORA HERRAMIENTAS DE PRODUCCION :
+* npm i --save react react-dom react-router-dom
+* npm i --save redux react-redux redux-saga
+* npm i --save-dev @babel/plugin-transform-modules-commonjs 
+para exportaciones instale como desarrollo porque asi recomienta la documentacion 
+* npm i --save-dev @babel/plugin-transform-runtime
+* npm i --save axios bootstrap para hacer peticiones https y usar 
+accesorios de boostrap
+AHORA HACEMOS LA CONFIGURACIONES DE NUESTRO PROJECT 
+*en la raiz de nuestro projecto creo un archivo .babelrc es un archivo
+de configuracion para babel , dentro de el agrego la configuracion 
+que puedo ver en el projecto
+*crear .editorconfig el codigo lo puedo ver en el project , editor 
+para entorno de desarrollo 
+*crear archivo webpack.config.js en inserto codigo que lo puedo ver en el proyecto
+* estoy creando carpetas y archivos manualmente que puedo ver luego en el 
+proyecto
+
+*paso importante tengo que hacer eslint-init 
+-selecciono la opcion de to check syntax, find problems, and enforce code style
+-seleciono JavaScript modules (import - Export)
+-seleciono React 
+- luego pregunta si usamos typeScripts en el project coloco no , porque en
+este caso no usare TypeScript
+- selecciono Browser
+-selecciono un estilo popular
+- selecciono AirBnb
+-seleccion JSON
+-selecciono yes 
+- selecciono npm
+se descarga y me aparece un archivo llamado .eslintrc.json
