@@ -1,5 +1,5 @@
 import React from 'react';
-import Tasklist from './lists/TaskList';
+// import Tasklist from './lists/TaskList';
 // import Settings from './settings/Settings';
 
 /**
@@ -9,8 +9,9 @@ import Tasklist from './lists/TaskList';
 function App() {
     return (
       <div>
-        <Tasklist />
+        {/* <Tasklist /> */}
         {/* <Settings /> */}
+        <h1>Hola</h1>
       </div>
     );
 }
